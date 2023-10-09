@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: Config-Server-Demo
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://codehub-y.huawei.com/y00791213/Personal_Repository
+          username: y00791213
+          password: J8e#2314
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+
